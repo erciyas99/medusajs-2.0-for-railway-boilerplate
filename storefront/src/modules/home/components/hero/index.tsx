@@ -3,31 +3,18 @@ import { Button, Heading } from "@medusajs/ui"
 
 const Hero = () => {
   return (
-    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
-        <span>
-          <Heading
-            level="h1"
-            className="text-3xl leading-10 text-ui-fg-base font-normal"
-          >
-            EGE SIKER  DENEME 1
-          </Heading>
-          <Heading
-            level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal"
-          >
-            
-          </Heading>
-        </span>
-        <a
-          href="https://funkyton.com/medusajs-2-0-is-finally-here/"
-          target="_blank"
-        >
+    <div className="h-[75vh] w-full flex flex-col items-center justify-center text-center gap-6">
+      <img
+        src="/logo.png" // Add your image path
+        width={1000} // Adjust width as needed
+        height={1000} // Adjust height as needed
+        alt="Homepage Banner"
+        className="rounded-lg shadow-lg"
+      />
 
-        </a>
-      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
+
